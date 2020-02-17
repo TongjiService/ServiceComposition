@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务封装系统开发示例</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../static/css/signup.css" rel="stylesheet">
+    <script src="../static/js/jquery-3.1.1.min.js"> </script>
+    <script src="../static/js/signup.js"> </script>
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" ><a href="/">首页</a></li>
+            <li role="presentation"><a href="/show_sign_in">登录</a></li>
+            <li role="presentation" class="active"><a href="/show_sign_up">注册</a></li>
+              <li role="presentation"><a href="http://localhost:8080">服务封装查看</a>
+                </li>
+                <li role="presentation"><a href="#">暂无</a>
+                </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">服务封装平台</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h3>欢迎注册服务封装平台</h3>
+        <form class="form-signin">
+        <label for="inputName" class="sr-only">用户名</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="请输入用户名" required autofocus>
+        <label for="inputEmail" class="sr-only">E-mail</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="电子邮箱地址" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="请输入密码" required>
+
+        <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="button">注册</button>
+      </form>
+      </div>
+
+
+
+      <footer class="footer">
+        <p>&copy; 同济大学网格中心实验室 2020</p>
+      </footer>
+
+</div>
+</body>
+</html>

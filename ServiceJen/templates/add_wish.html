@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>服务封装系统</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <script src="../static/js/jquery-3.1.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul class="nav nav-pills pull-right">
+                    <li role="presentation" class="active"><a href="#">添加服务信息</a>
+                    </li>
+                    <li role="presentation"><a href="/logout">退出</a>
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">服务信息管理</h3>
+        </div>
+        <section>
+            <form class="form-horizontal" method="post" action="/add_wish">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>创建服务封装</legend>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtTitle">服务封装名称</label>
+                        <div class="col-md-4">
+                            <input id="txtTitle" name="inputTitle" type="text" placeholder="请输入服务封装名称" class="form-control input-md">
+                        </div>
+                    </div>
+                                        <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtTitle">编号</label>
+                        <div class="col-md-4">
+                            <input id="txtTitle" name="inputNum" type="text" placeholder="请输入编号" class="form-control input-md">
+                        </div>
+                    </div>
+
+                                        <!-- Text input-->
+                    <!--<div class="form-group">
+                        <label class="col-md-4 control-label" for="txtTitle">区号</label>
+                        <div class="col-md-4">
+                            <input id="txtTitle" name="inputUser_id" type="text" placeholder="请输入区号" class="form-control input-md">
+                        </div>
+                    </div>-->
+
+                                        <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtTitle">服务封装描述</label>
+                        <div class="col-md-4">
+                            <input id="txtTitle" name="inputAddress" type="text" placeholder="请输入服务封装描述" class="form-control input-md">
+                        </div>
+                    </div>
+
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="txtPost">工作所需要的服务</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="txtPost" name="inputDescription"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="singlebutton"></label>
+                        <div class="col-md-4">
+                            <input id="singlebutton" name="singlebutton" class="btn btn-primary" type="submit" value="发布" />
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </section>
+        <footer class="footer">
+            <p>&copy; 同济大学网格中心实验室 2020</p>
+        </footer>
+
+    </div>
+</body>
+</html>
